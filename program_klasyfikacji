@@ -1,0 +1,25 @@
+/*###############################
+program klasyfikacji
+kapi ochmański 2016
+grupa programistyczna "igristoje"
+#################################*/
+
+#include <iostream> //zawarcie biblioteki iostream
+
+class Klasyfikacja
+{
+
+
+
+
+
+};
+
+int main() //inicjacja oraz wywołanie funkcji main
+{
+
+
+
+
+	return 0;
+}
