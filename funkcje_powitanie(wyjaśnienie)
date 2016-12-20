@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>   //zawierasz potrzebne biblioteki
+
+    //tutaj definiujesz zmienne globalne, czyli takie, które są dostępne w każdej funkcji, klasie, itp.
+    //przyklad
+    //int l1;
+    //wtedy zmienną "l1" będziesz mógł użyć w każdej funkcji
+
+void powitanie(std::string imie_funkcja_powitanie)  //w te nawiasy dajesz zmienne, które później możesz użyć w obliczeniach, działaniu funkcji
+    //przekazujesz w ten sposób wartości, poleceniem, np. cin do zmiennej, a później ta zmienna w pierwszej funkcji nadaje wartość zmiennej w tej funkcji którą chce się wywować
+{
+    std::cout<<"witaj "<< imie_funkcja_powitanie<< " !"; //wypisywanie na ekranie powitania
+        //w funkcji typu void nie możesz dać return, bo nie zwraca ona żadnej wartości
+}
+
+int main()
+{
+        //std::string imie; to zmienna, która istnieje tylko dla funkcji main i nigdzie indziej
+    std::string imie_funkcja_main;
+    std::cout<<"podaj imie: ";
+    std::cin>>imie_funkcja_main;    //nadajesz wartość zmiennej poleceniem cin
+    powitanie(imie_funkcja_main);   //wywołujesz funkcję "powitanie" i przekazujesz wartości zmiennej "imie1" funkcji main do zmiennej imie w funkcji powitanie
+        //zwróć uwagę, że mógłbyś nazwać te zmienne tak samo, np. "imie" i wszystko by działało ponieważ są one w innych funkcjach czyli istnieją tylko w obrębie tych funkcji
+
+    return 0;
+}
