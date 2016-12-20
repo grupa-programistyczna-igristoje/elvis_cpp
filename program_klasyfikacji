@@ -4,41 +4,55 @@ kapi ochmański 2016
 grupa programistyczna "igristoje"
 #################################*/
 
+#include <string> //zawarcie biblioteki ze stringami
 #include <iostream> //zawarcie biblioteki iostream
+
+typedef unsigned short mz; //definiowanie swojego typu zmiennych
+const mz szer=119; //stała na całą szerokość konsoli
 
 unsigned short pkt;
 char ocena;
 
-class Klasyfikacja
+class Klasyfikacja 
 {
-    public:
+public:
 
-    unsigned short obliczanie(unsigned short pkt)
-    {
-        if (pkt > 100)
-        {
-            std::cout<<"Nie mozesz miec wiecej punktow niz 100";
+	unsigned short obliczanie(unsigned short pkt) //funkcja obliczająca jaką dostaje się ocenę
+	{
+		if (pkt > 100)
+		{
+			std::cout << "\nNie mozesz miec wiecej punktow niz 100\n";
+		}
+		if (pkt == 100)
+		{
+			std::cout << "\nMasz przecietny wynik, wyjdz ze strefy komfortu\n";
+		}
 
-
-        }
-        return pkt,ocena;
-    }
+		return pkt, ocena;
+	}
 
 
 
 
 };
-
-
-short linia()
+mz linia(mz l1) //funkcja rysująca linie oddzielajaca
+{
+	for (mz i = 0; i < l1; i++)
+	{
+		std::cout << "-";
+	}
+	return 0;
+}
 
 int main() //inicjacja oraz wywołanie funkcji main
 {
-    std::cout<<"Podaj swoje pkt: ";
-    std::cin>>::pkt;
-    Klasyfikacja oceny1;
-    oceny1.obliczanie(pkt);
-    std::cout<<"\n\nTwoja liczba punktow: "<<pkt;
+	linia(szer);
+	std::cout << "\nPodaj swoje pkt: ";
+	std::cin >>pkt;
+	std::cout << "Zapisywanie danych...\n"; //kurwa zajebiste
+	linia(szer);
+	Klasyfikacja oceny1;
+	oceny1.obliczanie(pkt);
 
 
 	return 0;
