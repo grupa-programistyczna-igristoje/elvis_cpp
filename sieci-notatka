@@ -24,5 +24,17 @@ default gateway to adres interfejsu routera z tej sieci
 komputer1 <--> router <--> komputer2
 komputer1: 10.21.21.21 /21 (255.255.248.0)
 komputer2: 21.50.21.21 (maska na 13 pc)
- k2 maska podsieci 28 (255.255.255.240)
-    N: 
+k2 maska podsieci 28 (255.255.255.240)
+k1 obliczenia:
+  10.21.21.21 /21
+  10.21.00010|101.00010101
+  10.21.00010111.11111110
+  last: 10.21.23.254
+  255.255.11111|000.0
+  255.255.248.0
+k2 obliczenia:  
+  21.50.21.21/28
+  21.50.21.0001|0101
+  21.50.21.00011110
+  last: 21.50.21.30
+  255.255.255.1111|0000
