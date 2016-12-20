@@ -3,7 +3,7 @@ program klasyfikacji
 kapi ochmański 2016
 grupa programistyczna "igristoje"
 #################################*/
-#include <string> //zawarcie biblioteki ze stringami
+#include <string> //zawarcie biblioteki ze stringami, edit: niepotrzebne, bo nie używam nigdzie ciągów znaków już
 #include <iostream> //zawarcie biblioteki iostream
 
 typedef unsigned short mz; //definiowanie swojego typu zmiennych
