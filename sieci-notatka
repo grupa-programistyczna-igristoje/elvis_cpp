@@ -4,4 +4,15 @@ Adres 1 hosta 1st:  192.168.0.1 (adres sieci +1)
 l=last
   Ostatni(b)L: (broadcast-1) 192.168.0.254
   Adres rozgłoszeniowy Br:  po kresce na maksa, 192.168.0.255
-  Żeby obliczyć cokolwiek, to trzeba wyznaczyć linię, która określa po lewej stronie te same liczby.
+  Żeby obliczyć cokolwiek, to trzeba wyznaczyć linię, która określa po lewej stronie te same wartości
+  Po kresce zerujemy wszystkie oktety
+----
+topologia komputer <--> router:
+10.10.10.10 /24
+last wtedy będzie: 10.10.10.254
+----
+masz 60 PC
+dobierz maskę
+18.50.40.20
+
+
