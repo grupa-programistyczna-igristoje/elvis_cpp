@@ -7,6 +7,10 @@ l=last
   Żeby obliczyć cokolwiek, to trzeba wyznaczyć linię, która określa po lewej stronie te same wartości
   Po kresce zerujemy wszystkie oktety
 ----
+wzór na obliczanie miejsca w masce:
+  32-maska=x
+  2^x-2=max liczba urządzeń
+----
 topologia komputer <--> router:
 10.10.10.10 /24
 last wtedy będzie: 10.10.10.254
@@ -14,5 +18,11 @@ last wtedy będzie: 10.10.10.254
 masz 60 PC
 dobierz maskę
 18.50.40.20
+----
+default gateway to adres interfejsu routera z tej sieci
 
-
+komputer1 <--> router <--> komputer2
+komputer1: 10.21.21.21 /21 (255.255.248.0)
+komputer2: 21.50.21.21 (maska na 13 pc)
+ k2 maska podsieci 28 (255.255.255.240)
+    N: 
