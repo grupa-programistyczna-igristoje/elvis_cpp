@@ -1,0 +1,7 @@
+192.168.0.1 /24
+Adres sieci N:
+Adres 1 hosta 1st:  192.168.0.1 (adres sieci +1)
+l=last
+  Ostatni(b)L: (broadcast-1) 192.168.0.254
+  Adres rozgłoszeniowy Br:  po kresce na maksa, 192.168.0.255
+  Żeby obliczyć cokolwiek, to trzeba wyznaczyć linię, która określa po lewej stronie te same liczby.
