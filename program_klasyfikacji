@@ -18,6 +18,8 @@ class Klasyfikacja
         if (pkt > 100)
         {
             std::cout<<"Nie mozesz miec wiecej punktow niz 100";
+
+
         }
         return pkt,ocena;
     }
