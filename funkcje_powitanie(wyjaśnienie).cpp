@@ -19,7 +19,7 @@ int main()
     std::string imie_funkcja_main;
     std::cout<<"podaj imie: ";
     std::cin>>imie_funkcja_main;    //nadajesz wartość zmiennej poleceniem cin
-    powitanie(imie_funkcja_main);   //wywołujesz funkcję "powitanie" i przekazujesz wartości zmiennej "imie1" funkcji main do zmiennej imie w funkcji powitanie
+    powitanie(imie_funkcja_main);   //wywołujesz funkcję "powitanie" i przekazujesz wartości zmiennej "imie_funkcja_main" funkcji main do zmiennej "imie_funkcja_powitanie" w funkcji powitanie
         //zwróć uwagę, że mógłbyś nazwać te zmienne tak samo, np. "imie" i wszystko by działało ponieważ są one w innych funkcjach czyli istnieją tylko w obrębie tych funkcji
 
     return 0;
