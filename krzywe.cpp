@@ -1,5 +1,5 @@
 /*=====================
-gra konsolowa unikanie
+gra konsolowa unikanie (a wyszly krzywe)
 grupa programistyczna "igristoje"
 kapi ochmanski 2016
 main.cpp
@@ -19,7 +19,7 @@ int main()
 		std::cin >> arg1;
 		std::cout << "parametr: ";
 		std::cin >> arg2;
-		rys_siatka(false, arg1, arg2); //pierwszy argument aktywuje wyœwietlanie informacji o mapie, drugi okreœla odstêp, ostatni to parametr
+		rys_siatka(false, arg1, arg2); //pierwszy argument aktywuje wyÅ›wietlanie informacji o mapie, drugi okreÅ›la odstÄ™p, ostatni to parametr
 		std::cin.ignore(1);
 
 	} while (true);
