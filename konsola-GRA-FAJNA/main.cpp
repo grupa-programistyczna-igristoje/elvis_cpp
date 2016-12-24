@@ -11,8 +11,7 @@ int main()
 	mapa1.obl_Mapy();
 	mapa1.rys_Mapy();
 	Sterowanie sterowanie1;
-	sterowanie1.wcz_ciag();  //test ci¹gu znaków
-	cout << sterowanie1.klawiatura_string;
-	sterowanie1.calyczas(true, true);  //test ci¹g³ego sterowanie
-	cin.ignore(2);
+	sterowanie1.wcz_char("info");
+	sterowanie1.wcz_ciag(true,"info");
+	sterowanie1.calyczas(true, "info");
 }
