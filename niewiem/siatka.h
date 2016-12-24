@@ -6,10 +6,10 @@ siatka.h
 =======================*/
 #pragma once
 #define SZEROKOSC 150
-#define	DLUGOSC 150 //definiowanie sta³ych szerokoœæ i d³ugoœæ siatki
+#define	DLUGOSC 150 //definiowanie staÅ‚ych szerokoÅ›Ä‡ i dÅ‚ugoÅ›Ä‡ siatki
 
 char siatka[SZEROKOSC][DLUGOSC];
-char *gdzie_siatka; //wskaŸnik bitów (znaków) w siatce
+char *gdzie_siatka; //wskaÅºnik bitÃ³w (znakÃ³w) w siatce
 
 void rys_siatka(bool info, int dodatek, int dodatek2)
 {
