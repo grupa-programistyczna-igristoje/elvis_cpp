@@ -6,9 +6,9 @@ class Mapa
 {
 public:
 	Mapa(); //tworzenie obiektu Mapa
-	void wczMapy(); //wczytywanie mapy
-	void iniMapy(); //inicjalizacja mapy
-	void rysMapy(); //rysowanie mapy
+	void wcz_Mapy(); //wczytywanie mapy
+	void obl_Mapy(); //inicjalizacja mapy
+	void rys_Mapy(); //rysowanie mapy
 private:
 	#define SZEROKOSC 100
 	#define DLUGOSC 20
