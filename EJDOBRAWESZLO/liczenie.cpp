@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <math.h>
 using namespace std;
 
 
@@ -40,55 +41,44 @@ Liczenie::Liczenie(bool zapis, bool do_zera)
 		{
 			printf("%s\n", "Zapisywanie liczby...");
 			ofstream liczby("twoje_liczby.txt", ios_base::app);
-			if (liczby.is_open())
-			{
-				liczby << twoja_liczba << endl;
-				liczby.close();
-			}
-			else
-			{
-				cout << "Nie mozna otworzyc pliku";
-			}
+				liczby<< "\n==============\n" << twoja_liczba <<  endl;
 		}
+		printf("%s\r", "Zapisano pomyslnie liczbe");
 		if (do_zera == true)
 		{
 			if (l1 >= 0)
 			{
 				long long i;
+				cout << endl;
 				for (i = 0; i <= l1; i++)
 				{
-					cout << l1 - i << " ";
+					//cout << l1 - i << " ";
+					//printf("\r%s", "Zapisywanie sekwencji...");
+					cout << "\rZapisywanie sekwencji... (" << abs(i) << ")";
 					if (zapis == true)
 					{
 						ofstream liczby("twoje_liczby.txt", ios_base::app);
-						if (liczby.is_open())
-						{
 							liczby << l1 - i << " ";
-							liczby.close();
-						}
 					}
-					//l2[i] = i;
 				}
-				printf("\n%s\n", "Zapisywanie sekwencji...");
+				cout << "\rZapisano pomyslnie " << abs(i) << " elementow\n";
 			}
 			else if (l1 < 0)
 			{
 				long long i;
+				cout << endl;
 				for (i = 0; i >= l1; i--)
 				{
-					cout << l1 - i << " ";
+					//cout << l1 - i << " ";
+					//printf("\r%s", "Zapisywanie sekwencji...");
+					cout << "\rZapisywanie sekwencji... (" << abs(i) << "s)";
 					if (zapis == true)
 					{
 						ofstream liczby("twoje_liczby.txt", ios_base::app);
-						if (liczby.is_open())
-						{
 							liczby << l1 - i << " ";
-							liczby.close();
-						}
 					}
-					//l2[i] = i;
 				}
-				printf("\n%s\n", "Zapisywanie sekwencji...\n");
+				cout << "\rZapisano pomyslnie " << abs(i) << " elementow\n";
 			}
 		}
 		if (zapis == true)
@@ -96,7 +86,6 @@ Liczenie::Liczenie(bool zapis, bool do_zera)
 			ofstream liczby("twoje_liczby.txt", ios_base::app);
 			if (liczby.is_open())
 			{
-				liczby <<"\n==============\n";
 				liczby.close();
 			}
 		}
