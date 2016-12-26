@@ -3,14 +3,13 @@
 #include <fstream>
 #include <string>
 #include <math.h>
-using namespace std;
 
+using namespace std;
 
 Liczenie::Liczenie(bool zapis, bool do_zera)
 {
 	temp_twoja_liczba << "";
 	twoja_liczba = temp_twoja_liczba.str();
-	//oss.str()
 	temp_podaj_liczbe << "Podaj liczbe do analizy: ";
 	podaj_liczbe = temp_podaj_liczbe.str();
 		printf("%s\n", podaj_liczbe.c_str());
@@ -52,8 +51,6 @@ Liczenie::Liczenie(bool zapis, bool do_zera)
 				cout << endl;
 				for (i = 0; i <= l1; i++)
 				{
-					//cout << l1 - i << " ";
-					//printf("\r%s", "Zapisywanie sekwencji...");
 					cout << "\rZapisywanie sekwencji... (" << abs(i) << ")";
 					if (zapis == true)
 					{
@@ -69,8 +66,6 @@ Liczenie::Liczenie(bool zapis, bool do_zera)
 				cout << endl;
 				for (i = 0; i >= l1; i--)
 				{
-					//cout << l1 - i << " ";
-					//printf("\r%s", "Zapisywanie sekwencji...");
 					cout << "\rZapisywanie sekwencji... (" << abs(i) << "s)";
 					if (zapis == true)
 					{
