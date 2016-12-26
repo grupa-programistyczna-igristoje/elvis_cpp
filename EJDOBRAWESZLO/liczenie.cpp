@@ -38,11 +38,10 @@ Liczenie::Liczenie(bool zapis, bool do_zera)
 		printf("%s\n", twoja_liczba.c_str());
 		if (zapis == true)
 		{
-			printf("%s\n", "Zapisywanie liczby...");
 			ofstream liczby("twoje_liczby.txt", ios_base::app);
-				liczby<< "\n==============\n" << twoja_liczba <<  endl;
+				liczby<< "\n==============\n" << twoja_liczba <<"\nSekwencja liczb od "<< l1 << " do 0:" <<  endl;
+				printf("%s", "Zapisano pomyslnie liczbe");
 		}
-		printf("%s\r", "Zapisano pomyslnie liczbe");
 		if (do_zera == true)
 		{
 			if (l1 >= 0)
@@ -66,7 +65,7 @@ Liczenie::Liczenie(bool zapis, bool do_zera)
 				cout << endl;
 				for (i = 0; i >= l1; i--)
 				{
-					cout << "\rZapisywanie sekwencji... (" << abs(i) << "s)";
+					cout << "\rZapisywanie sekwencji... (" << abs(i) << ")";
 					if (zapis == true)
 					{
 						ofstream liczby("twoje_liczby.txt", ios_base::app);
