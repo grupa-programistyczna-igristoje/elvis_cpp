@@ -1,7 +1,7 @@
 #include "liczenie.h"
 #include <iostream>
 #include <fstream>
-#include <string>
+#include <string> //niepotrzebne jednak
 #include <math.h>
 
 using namespace std;
