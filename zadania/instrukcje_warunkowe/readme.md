@@ -17,6 +17,7 @@ Expected Output :
 Test Data : 2016 
 Expected Output :
 2016 is a leap year.
+Na to jest wzór jakby co
 
 5. Write a C program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.
 Test Data : 21 
