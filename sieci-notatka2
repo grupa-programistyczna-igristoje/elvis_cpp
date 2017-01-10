@@ -1,1 +1,10 @@
-Sprawdź czy dane adresy ip komunikują się ze sobą
+1. Sprawdź czy dane adresy ip komunikują się ze sobą
+192.168.5.100
+192.168.10.101
+
+2. Zamiana notacji dziesiętnej na z prefiksem
+192.168.5.10 255.0.0.0 /8
+192.168.10.2 255.0.0.0 /8
+
+3. Jak obliczyć ile maksymalnie komputerów można zaadresować w jednej sieci
+
