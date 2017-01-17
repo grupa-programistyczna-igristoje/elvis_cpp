@@ -22,5 +22,6 @@ Maska /26
 Adres
 90.91.101.0 / 25
 ----------------
-90.91.101.0 / 26 (WIFI)
-90.91.101.64 / 26
+90.91.101.0 / 26 (WIFI) 1 PODSIEĆ
+90.91.101.64 / 26 (CHECK IN) <-- Teraz to jest adres bazowy
+90.91.101.96 / 27 (WIEŻA) <-- To jest potem adres bazowy
