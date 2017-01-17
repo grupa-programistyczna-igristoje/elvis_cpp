@@ -1,0 +1,26 @@
+================
+4 podsieci (10.0.0.0 /25):
+
+10.0.0.0|00|0000 //sieć 1
+10.0.0.0|01|0000 //sieć 2
+10.0.0.0|10|0000 //sieć 3
+10.0.0.0|11|0000 //sieć 4
+================
+VLSM
+variable lenght subnet mask
+================
+Jesteś administratorem lotniska, musisz podzielić sieć na podsieci:
+DEPARTURES 5 PC
+ARRIVALS 4 PC
+WIFI 53 PC /26
+WIEZA 8 PC
+ODPRAWA 25 PC
+----------------
+Zaczynamy od największej sieci:
+WIFI, ODPRAWA, WIEŻA, DEPARTURES, ARRIVALS
+Maska /26
+Adres
+90.91.101.0 / 25
+----------------
+90.91.101.0 / 26 (WIFI)
+90.91.101.64 / 26
